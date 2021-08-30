@@ -14,7 +14,9 @@ export default () => {
         console.log('Correct!');
       } else {
         console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
-        return `Let's try again, ${name}!`;
+        return (
+          console.log(`Let's try again, ${name}!`)
+        );
       }
     }
     if (number % 2 !== 0) {
@@ -22,7 +24,9 @@ export default () => {
         console.log('Correct!');
       } else {
         console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
-        return `Let's try again, ${name}!`;
+        return (
+          console.log(`Let's try again, ${name}!`)
+        );
       }
     }
     // if (number % 2 === 0 && youAnswer === 'yes') {
@@ -38,5 +42,7 @@ export default () => {
     //   return `Let's try again, ${name}!`;
     // }
   }
-  return `Congratulations, ${name}!`;
+  return (
+    console.log(`Congratulations, ${name}!`)
+  );
 };
