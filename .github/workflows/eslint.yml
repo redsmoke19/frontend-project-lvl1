@@ -1,0 +1,10 @@
+name: eslint
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run-lint
+        run: make lint
