@@ -30,7 +30,7 @@ const getGameTask = () => {
   const deletedIndex = getRandomNumber(0, length);
   const progression = getProgression(startNumber, step, length);
   const deleted = progression.splice(deletedIndex, 1, '..');
-  const question = progression.join(', ');
+  const question = progression.join(' ');
   const answer = String(deleted[0]);
   return [question, answer];
 };
